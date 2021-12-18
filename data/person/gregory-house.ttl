@@ -1,0 +1,24 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Person;
+  schema:birthDate "1959-05-15"^^xsd:date;
+  schema:familyName "House";
+  schema:givenName "Gregory";
+  schema:homeLocation <../place/221b-baker-street>;
+  schema:jobTitle "Head of Diagnostic Medicine";
+  schema:knows
+    <allison-cameron>,
+    <blythe-house>,
+    <dominika-house>,
+    <eric-foreman>,
+    <james-wilson>,
+    <jonathan-house>,
+    <lisa-cuddy>,
+    <robert-chase>;
+  schema:nationality <../place/usa>;
+  schema:parent
+    <blythe-house>,
+    <jonathan-house>;
+  schema:spouse <dominika-house>;
+  schema:workLocation <../place/princeton-plainsboro>.

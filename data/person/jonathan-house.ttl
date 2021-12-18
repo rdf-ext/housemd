@@ -1,0 +1,15 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Person;
+  schema:birthDate "1942"^^xsd:gYear;
+  schema:children
+    <gregory-house>;
+  schema:familyName "House";
+  schema:givenName "Jonathan";
+  schema:jobTitle "Marine pilot";
+  schema:knows
+    <blythe-house>,
+    <gregory-house>;
+  schema:nationality <../place/usa>;
+  schema:spouse <blythe-house>.

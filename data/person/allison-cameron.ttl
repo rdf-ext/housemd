@@ -1,0 +1,16 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Person;
+  schema:familyName "Cameron";
+  schema:givenName "Allison";
+  schema:jobTitle "Immunologist";
+  schema:knows
+    <eric-foreman>,
+    <gregory-house>,
+    <james-wilson>,
+    <lisa-cuddy>,
+    <robert-chase>;
+  schema:nationality <../place/usa>;
+  schema:spouse <robert-chase>;
+  schema:workLocation <../place/princeton-plainsboro>.

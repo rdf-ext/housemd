@@ -1,0 +1,15 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Person;
+  schema:birthDate "1968"^^xsd:gYear;
+  schema:familyName "Cuddy";
+  schema:givenName "Lisa";
+  schema:jobTitle "Dean of Medicine";
+  schema:knows
+    <allison-cameron>,
+    <eric-foreman>,
+    <james-wilson>,
+    <robert-chase>;
+  schema:nationality <../place/usa>;
+  schema:workLocation <../place/princeton-plainsboro>.

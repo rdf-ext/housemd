@@ -1,0 +1,41 @@
+{
+  "name": "housemd",
+  "version": "0.0.0",
+  "description": "House, M.D. RDF dataset",
+  "type": "module",
+  "main": "dist/housemd.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "stricter-standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rdf-ext/housemd.git"
+  },
+  "keywords": [
+    "house",
+    "housemd",
+    "rdf",
+    "rdfjs",
+    "rdf-ext"
+  ],
+  "author": "Thomas Bergwinkl <bergi@axolotlfarm.org> (https://www.bergnet.org/people/bergi/card#me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdf-ext/housemd/issues"
+  },
+  "homepage": "https://github.com/rdf-ext/housemd",
+  "devDependencies": {
+    "@rdfjs/namespace": "^1.1.0",
+    "@rdfjs/serializer-rdfjs": "^0.1.0",
+    "glob": "^7.2.0",
+    "mkdirp": "^1.0.4",
+    "rdf-ext": "^1.3.5",
+    "rdf-utils-fs": "^2.2.0",
+    "simple-git-hooks": "^2.7.0",
+    "stricter-standard": "^0.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run build && git add dist/*"
+  }
+}

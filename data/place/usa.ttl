@@ -1,0 +1,7 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Place;
+  schema:alternateName "USA";
+  schema:identifier "US";
+  schema:name "United States of America".

@@ -1,0 +1,10 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Place;
+  schema:address [ a schema:PostalAddress;
+    schema:addressLocality "Plainsboro Township";
+    schema:addressRegion "NJ";
+    schema:postalCode "08536";
+    schema:streetAddress "221B Baker Street"
+  ].

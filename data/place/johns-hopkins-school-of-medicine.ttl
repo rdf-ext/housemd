@@ -1,0 +1,11 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Place;
+  schema:address [ a schema:PostalAddress;
+    schema:addressLocality "Baltimore";
+    schema:addressRegion "MD";
+    schema:postalCode "21205";
+    schema:streetAddress "733 N Broadway"
+  ];
+  schema:name "Johns Hopkins School of Medicine".

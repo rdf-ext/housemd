@@ -1,0 +1,16 @@
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> a schema:Person;
+  schema:alumniOf <../place/johns-hopkins-school-of-medicine>;
+  schema:familyName "Foreman";
+  schema:givenName "Eric";
+  schema:jobTitle "Neurologist";
+  schema:knows
+    <allison-cameron>,
+    <gregory-house>,
+    <james-wilson>,
+    <lisa-cuddy>,
+    <robert-chase>;
+  schema:nationality <../place/usa>;
+  schema:workLocation <../place/princeton-plainsboro>.
