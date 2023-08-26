@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "House, M.D. RDF dataset",
   "type": "module",
-  "main": "dist/housemd.js",
   "scripts": {
     "build": "node build.js",
     "test": "stricter-standard"

@@ -17,16 +17,28 @@ A [N-Triples](https://en.wikipedia.org/wiki/N-Triples) representation of the com
 
 ### RDF/JS builder
 
-The `dist/housemd.js` file contains JavaScript code that builds an array of RDF/JS quad objects.
+The `index.js` file contains JavaScript code that builds an array of RDF/JS quad objects.
 A [DataFactory](http://rdf.js.org/data-model-spec/) implementation must be given as `factory` argument.
 That factory will be used to build the terms and quads.
-The example below shows how to import the dataset using [rdf-ext](https://github.com/rdf-ext/rdf-ext).  
+The example below shows how to import the quads into a dataset using [rdf-ext](https://github.com/rdf-ext/rdf-ext):  
 
 ```javascript
 import housemd from 'housemd'
 import rdf from 'rdf-ext'
 
 const dataset = rdf.dataset(housemd({ factory: rdf }))
+```
+
+The default export returns an array of quads with the graph matching the resource.
+The `triples` export is available for use cases requiring triples (quads with default graph).
+The function accepts the same arguments as the default export.
+The example below shows how to import the triples into a dataset using [rdf-ext](https://github.com/rdf-ext/rdf-ext):
+
+```javascript
+import { triples as housemdTriples } from 'housemd'
+import rdf from 'rdf-ext'
+
+const dataset = rdf.dataset(housemdTriples({ factory: rdf }))
 ```
 
 ### Turtle
